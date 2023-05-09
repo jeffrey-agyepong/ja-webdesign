@@ -1,4 +1,4 @@
-// vite.config.js
+const Sitemap = require('vite-plugin-sitemap');
 
 module.exports = {
     build: {
@@ -8,8 +8,10 @@ module.exports = {
                 about: 'about.html',
                 contact: 'contact.html',
                 privacyPolicy: 'privacy-policy.html',
-
             }
         }
-    }
+    },
+    plugins: [
+        Sitemap()
+    ]
 };

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.about {
+    overflow-x: hidden;
+}
+
+.about img {
+    width: 250px;
+}
+
+.max-w-24ch {
+    max-width: 24ch;
+}
+
+.group,
+.project-card {
+    flex: 0 0 85%;
+}
+
+.transition-all {
+    transition-duration: 400ms !important;
+}
+
+@media screen and (min-width: 768px) {
+    .about .container {
+        padding: 0 70px;
+    }
+}
+
+/* 
+@media screen and (min-width: 1024px) {
+    .projects .container {
+        max-width: 1280px;
+    }
+} */

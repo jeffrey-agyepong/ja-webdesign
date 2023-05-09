@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="J.A Web Design is your go-to source for top-notch web development and design services in Edmonton, Alberta. With five years of experience and a focus on quality and customer satisfaction, we specialize in creating modern, user-friendly websites for small businesses, e-commerce stores, and personal portfolios. Our fully responsive websites are optimized for performance and search engine rankings, using the latest technologies like HTML, CSS, JavaScript, Vue.js, PHP, and CMS platforms such as WordPress. Contact us today for high-quality work that exceeds your expectations.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+  <link rel="manifest" href="public/site.webmanifest">
+  <link rel="mask-icon" href="public/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="public/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>J.A Web Design | Custom Modern Web Design & Development in Edmonton, Alberta</title>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVW8BBBVLV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WVW8BBBVLV');
+  </script>
+
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1 class="hidden">J.A Web Design</h1>
+      <nav class="bg-blue-500 dark:bg-gray-900 dark:shadow-white fixed w-full z-20 top-0 left-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+          <a href="index.html" class="flex items-center">
+            <img src="/public/ja-web-design.png" class="h-16 mr-3" alt="J.A Web Design Logo">
+          </a>
+          <div class="flex md:order-2">
+            <!-- Get Started  -->
+            <button type="button" class="
+              items-center
+              justify-center
+              py-3
+              px-6
+              rounded-full
+              text-white bg-header-dark-blue
+              dark:bg-blue-700
+              text-base
+              font-medium
+              hover:bg-opacity-50 hover:shadow-lg
+              transition
+              duration-300
+              ease-in-out hidden sm:block">Request A Quote</button>
+            <!-- Hamburger menu -->
+            <button data-collapse-toggle="navbar-sticky" type="button"
+              class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Toggle Button -->
+            <button id="theme-toggle" type="button" aria-label="Toggle Dark Mode"
+              class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 ml-2">
+              <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+              <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-bold rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 text-black text-lg">
+              <li>
+                <a href="#projects"
+                  class="block py-4 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+              </li>
+              <li>
+                <a href="#services"
+                  class="block py-4 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              </li>
+              <li>
+                <a href="about.html"
+                  class="block py-4 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  aria-current="page">About</a>
+              </li>
+
+              <li>
+                <a href="#testimonials"
+                  class="block py-4 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Testimonials</a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  class="block py-4 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="bg-blue-300 dark:bg-blue-800 mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-screen dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+
+          <h2
+            class="max-w-24ch mb-4 mt-40 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize">
+            User-Friendly <span class="dark:text-blue-300 text-blue-800 font-extrabold"> Web Development</span> and
+            <br><span class="dark:text-blue-300 text-blue-800 font-extrabold">
+              Design</span>
+          </h2>
+          <p class="mb-8 text-lg font-normal text-gray-900 lg:text-xl  dark:text-gray-200 text-left">
+            Crafting
+            digital experiences that prioritize user needs</p>
+          <a href="#projects" class="inline-flex
+            items-center
+            justify-center
+            py-4
+            px-6 rounded-full
+            sm:rounded
+            text-white bg-header-dark-blue
+            dark:bg-blue-600
+            text-base
+            font-bold
+            hover:bg-opacity-50 hover:shadow-lg
+            transition
+            duration-300 uppercase
+            ease-in-out float-left">View Portfolio</a>
+        </div>
+        <div
+          class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="dark:bg-blue-800 bg-blue-300  projects" id="projects">
+        <div class="container py-16 md:py-20 lg:px-8 px-4 mx-auto">
+          <h2
+            class="text-center font-header text-3xl font-bold uppercase dark:text-white text-blue-800 sm:text-5xl lg:text-6xl">
+            Projects
+          </h2>
+          <h3
+            class="pt-6 text-black dark:text-white text-center font-header text-xl font-medium sm:text-2xl lg:text-3xl">
+            These are some of the projects I've worked on.
+          </h3>
+          <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 pb-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+            <a href="https://www.figma.com/proto/tWbUYddiploWtP4uEgCtlj/Pop's-Pizza-%26-Pasta---Redesign?page-id=0%3A1&type=design&node-id=0-1&viewport=404%2C189%2C0.17&scaling=min-zoom&starting-point-node-id=4%3A487"
+              target="_blank"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+              <img src="/public/pops-pizza-pasta.webp" class="w-full shadow rounded-t-xl" alt="Pop's Pizza & Pasta"
+                width="716" height="400">
+              <div class="text-center  px-4 py-6">
+                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
+                  Pop's Pizza & Pasta
+                </p>
+                <span class="font-general-medium text-lg text-black dark:text-white">
+                  Web Design
+                </span>
+              </div>
+            </a>
+            <a href="https://jtbcreatives.netlify.app/index.html" target="_blank"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+              <img src="/public/jtb.webp" class="w-full shadow rounded-t-xl" alt="JTB Creatives - A NAIT DMIT Mock Site"
+                width="716" height="400">
+              <div class="text-center px-4 py-6">
+                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
+                  JTB Creatives - A NAIT DMIT Mock Site
+                </p>
+                <span class="font-general-medium text-lg text-black dark:text-white">
+                  Web Design & Development
+                </span>
+              </div>
+
+
+            </a>
+            <a href="https://i.ibb.co/t2H7pxN/iha.webp" target="_blank"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+              <img src="/public/internation-hockey-academy.webp" class="w-full shadow rounded-t-xl"
+                alt="International Hockey Academy">
+              <div class="text-center px-4 py-6">
+                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
+                  International Hockey Academy
+                </p>
+                <span class="font-general-medium text-lg text-black dark:text-white">
+                  WordPress Development
+                </span>
+              </div>
+
+
+            </a>
+            <a href="index.html"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
+              <img src="/public/ja-web-design.webp" class="w-full shadow rounded-t-xl" alt="J.A Web Design">
+              <div class="text-center text-white px-4 py-6">
+                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
+                  J.A Web Design
+                </p>
+                <span class="font-general-medium text-lg text-black dark:text-white">
+                  Web Design & Development
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Services -->
+      <section class="dark:bg-blue-900 bg-blue-400" id="services">
+        <div class="container py-16 md:py-20 lg:px-8 px-4 mx-auto">
+          <h2
+            class="text-center font-header text-3xl font-bold uppercase text-blue-800 dark:text-white sm:text-5xl lg:text-6xl">
+            Services
+          </h2>
+          <h3
+            class="pt-6 text-black dark:text-white text-center font-header text-xl font-medium sm:text-2xl lg:text-3xl">
+            These are the services I offer
+          </h3>
+
+          <div
+            class="flex overflow-x-auto sm:grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3 ">
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                  <img src="/public/icon-development-white.svg" alt=" web development icon">
+                </div>
+                <div class="block group-hover:hidden">
+                  <img src="/public/icon-development-black.svg" alt="web development icon">
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                  Web Development
+                </h3>
+
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                  <img src="/public/icon-graphics-white.svg" alt="Web Design icon">
+                </div>
+                <div class="block group-hover:hidden">
+                  <img src="/public/icon-graphics-black.svg" alt="Graphic Design icon">
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                  Web Design
+                </h3>
+
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                  <img src="/public/seo-white.svg" alt="seo">
+                </div>
+                <div class="block group-hover:hidden">
+                  <img src="/public/seo.svg" alt="seo">
+                </div>
+              </div>
+
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                  Seo
+                </h3>
+
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                  <img src="/public/icon-mobile-white.svg" alt="Social Media Marketing icon">
+                </div>
+                <div class="block group-hover:hidden">
+                  <img src="/public/icon-mobile-black.svg" alt="Social Media Marketing icon">
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                  Social Media Marketing
+                </h3>
+
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                  <img src="/public/graphic-design-white.svg" alt="Graphic Design icon">
+                </div>
+                <div class="block group-hover:hidden">
+                  <img src="/public/graphic-design-black.svg" alt="Graphic Design icon">
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                  Graphic Design
+                </h3>
+
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <div class="hidden group-hover:block">
+                  <img src="/public/web-maintenance-white.svg" alt="Website Maintenance icon">
+                </div>
+                <div class="block group-hover:hidden">
+                  <img src="/public/web-maintenance-black.svg" alt="Website Maintenance icon">
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                  Website Maintenance
+                </h3>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- About Us -->
+      <section id="about" class="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] about dark:bg-blue-800 bg-blue-400">
+        <div class="container mx-auto">
+          <!-- <div class="wow fadeInUp  " data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;"> -->
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full sm:px-4">
+              <div class="
+                    lg:flex
+                    items-center
+                    justify-between
+                    
+                    overflow-hidden rounded-2xl dark:bg-blue-900 bg-blue-300
+                  ">
+                <div class="
+                      lg:max-w-[565px]
+                      xl:max-w-[640px]
+                      w-full
+                      py-12
+                      px-7
+                      sm:px-12
+                      md:p-16
+                      lg:py-9 lg:px-16
+                      xl:p-[70px]
+                    ">
+                  <h2 class="
+                        font-extrabold
+                        text-3xl
+                        sm:text-4xl
+                        2xl:text-[40px]
+                        sm:leading-snug text-blue-800     dark:text-white                  capitalize
+                        mb-6
+                      ">
+                    A little bit about me
+                  </h2>
+
+                  <p
+                    class="mb-3 text-black dark:text-gray-200 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">
+                    As a self-taught freelancer turned NAIT student with five years of experience, I am a passionate web
+                    developer and designer with a keen eye for quality and customer satisfaction. My experience
+                    includes developing modern, user-friendly websites for small businesses, e-commerce stores, and
+                    personal portfolios.</p>
+
+                  <a href="about.html" class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        py-4
+                        px-6
+                        sm:rounded-full
+                        med:rounded
+                        text-white
+                        bg-header-dark-blue
+                        dark:bg-blue-700
+                        text-base
+                        font-medium
+                        hover:bg-opacity-50 hover:shadow-lg
+                        transition
+                        duration-300
+                        ease-in-out
+                      ">
+                    Read More About Me
+                  </a>
+                </div>
+                <div class="text-center container">
+                  <div class="relative inline-block z-10">
+                    <img src="public/jeff.webp" alt="Jeffrey Agyepong"
+                      class="h-auto max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0">
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="dark:bg-blue-900 bg-blue-300" id="testimonials">
+        <div class="container py-16 md:py-20 lg:px-8 px-4 mx-auto">
+          <h2
+            class="text-center font-header text-3xl font-bold uppercase text-blue-800 dark:text-white sm:text-5xl lg:text-6xl">
+            Testimonials
+          </h2>
+          <h3
+            class="pt-6 pb-12 text-black dark:text-white text-center font-header text-xl font-medium sm:text-2xl lg:text-3xl">
+            What People Are Saying
+          </h3>
+          <div class="flex flex-wrap flex-col mx-auto items-center">
+
+
+            <!-- Testimonial 1 Start -->
+            <div class=" dark:bg-blue-800 p-4 rounded-lg mb-8 bg-blue-400">
+              <figure class="max-w-screen-md ">
+                <div class="flex items-center mb-4 text-yellow-300">
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                </div>
+                <blockquote>
+                  <p class="text-2xl font-semibold text-gray-900 dark:text-white">"Jeffrey just completed a website for
+                    my
+                    alumni organization. It is so professionally done with a touch of appeal and a great look. Jeffrey
+                    designed the website through good communication and follow-up and provided the site as required and
+                    expected. It is a website designed to adjust to mobile devices. Jeffrey is also providing training
+                    and
+                    support with the capacity to do updates and other support systems when needed and takes prompt
+                    action
+                    on issues when needed. "</p>
+                </blockquote>
+                <figcaption class="flex items-center mt-6 space-x-3">
+                  <img class="w-16 h-16 rounded-full" src="public/mike.webp"
+                    alt="Michael Appiah-Boateng profile picture">
+                  <div class="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+                    <cite class="pr-3 font-medium text-gray-900 dark:text-white">Michael Appiah-Boateng</cite>
+                    <cite class="pl-3 text-sm text-gray-800 dark:text-gray-400">M.A.B Taxes</cite>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- Testimonial 1 End -->
+
+            <!-- Testimonial 2 Start -->
+            <div class=" dark:bg-blue-800 p-4 rounded-lg mb-8 bg-blue-400">
+              <figure class="max-w-screen-md ">
+                <div class="flex items-center mb-4 text-yellow-300">
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                </div>
+                <blockquote>
+                  <p class="text-2xl font-semibold text-gray-900 dark:text-white">"Jeffrey, thanks for helping me out
+                    for
+                    nearly 2 years. Thank you very much for your help on recreating our web page. I appreciate the time
+                    you spent, working through the design and problems with me. Your professionalism had gone up and
+                    beyond what was expected. Look forward to working with you in the future."</p>
+                </blockquote>
+                <figcaption class="flex items-center mt-6 space-x-3">
+                  <img class="w-16 h-16 rounded-full" src="public/darcy.webp" alt="Darcy Hodge profile picture">
+                  <div class="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+                    <cite class="pr-3 font-medium text-gray-900 dark:text-white">Darcy Hodge</cite>
+                    <cite class="pl-3 text-sm text-gray-800 dark:text-gray-400">Former Consultant at International
+                      Hockey
+                      Academy</cite>
+
+                  </div>
+                </figcaption>
+              </figure>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="100" height="92">
+                <path fill="#EA4335"
+                  d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z">
+                </path>
+                <path fill="#FBBC05"
+                  d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z">
+                </path>
+                <path fill="#4285F4"
+                  d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z">
+                </path>
+                <path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"></path>
+                <path fill="#EA4335"
+                  d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z">
+                </path>
+                <path fill="#4285F4"
+                  d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z">
+                </path>
+              </svg>
+            </div>
+            <!-- Testimonial 2 End -->
+
+
+            <!-- Testimonial 3 Start -->
+            <div class=" dark:bg-blue-800 p-4 rounded-lg mb-8 bg-blue-400">
+              <figure class="max-w-screen-md ">
+                <div class="flex items-center mb-4 text-yellow-300">
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                  <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                  </svg>
+                </div>
+                <blockquote>
+                  <p class="text-2xl font-semibold text-gray-900 dark:text-white">"Incredible craftsmanship.
+                    Professionalism at its best."</p>
+                </blockquote>
+                <figcaption class="flex items-center mt-6 space-x-3">
+                  <img class="w-16 h-16 rounded-full" src="public/chris.webp"
+                    alt="Christian Yao Amegavi profile picture">
+                  <div class="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+                    <cite class="pr-3 font-medium text-gray-900 dark:text-white">Christian Yao Amegavi</cite>
+                    <cite class="pl-3 text-sm text-gray-800 dark:text-gray-400">Friend & Assistant Engineer</cite>
+                  </div>
+                </figcaption>
+              </figure>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="100" height="92">
+                <path fill="#EA4335"
+                  d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z">
+                </path>
+                <path fill="#FBBC05"
+                  d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z">
+                </path>
+                <path fill="#4285F4"
+                  d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z">
+                </path>
+                <path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"></path>
+                <path fill="#EA4335"
+                  d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z">
+                </path>
+                <path fill="#4285F4"
+                  d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z">
+                </path>
+              </svg>
+            </div>
+            <!-- Testimonial 3 End -->
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- FAQ -->
+      <section class="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] about dark:bg-blue-800 bg-blue-400">
+        <div class="container mx-auto">
+
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4">
+              <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
+                <h2 class="
+                text-center font-header text-3xl font-bold uppercase dark:text-white text-blue-800 sm:text-5xl lg:text-6xl
+                    ">
+                  Frequently Asked Questions
+                </h2>
+                <!-- <p class="
+                      text-lg
+                      sm:text-xl
+                      leading-relaxed
+                      sm:leading-relaxed
+                      text-black dark:text-white
+                    ">
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority have suffered alteration in some form.
+                </p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/2 px-4">
+              <div class="single-faq
+                    w-full
+                    dark:bg-gray-900
+                    bg-blue-500 
+                    rounded-lg
+                    p-5
+                    sm:p-8
+                    mb-8
+                    wow
+                    fadeInUp" data-wow-delay=".1s
+                  " style="visibility: visible; animation-delay: 0.1s;">
+                <button class="faq-btn flex items-center w-full text-left">
+                  <span class="
+                        w-full
+                        max-w-[40px]
+                        h-10
+                        flex
+                        items-center
+                        justify-center
+                        rounded-lg
+                        bg-primary
+                        text-primary
+                        bg-opacity-5
+                        mr-5
+                      ">
+                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                      <path
+                        d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                        fill="#3056D3" stroke="#3056D3"></path>
+                    </svg>
+                  </span>
+                  <span class="w-full">
+                    <span class="text-base sm:text-lg font-semibold dark:text-white text-black">
+                      How do you approach designing a website?
+                    </span>
+                  </span>
+                </button>
+                <div class="faq-content pl-[62px] hidden">
+                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                    I start by looking for inspiration, then I create a wireframe of the site and then code it.
+                  </p>
+                </div>
+              </div>
+              <div class="single-faq
+                    w-full
+                    dark:bg-gray-900
+                    bg-blue-500 
+                    rounded-lg
+                    p-5
+                    sm:p-8
+                    mb-8
+                    wow
+                    fadeInUp" data-wow-delay=".15s
+                  " style="visibility: visible; animation-delay: 0.15s;">
+                <button class="faq-btn flex items-center w-full text-left">
+                  <span class="
+                        w-full
+                        max-w-[40px]
+                        h-10
+                        flex
+                        items-center
+                        justify-center
+                        rounded-lg
+                        bg-primary
+                        text-primary
+                        bg-opacity-5
+                        mr-5
+                      ">
+                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                      <path
+                        d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                        fill="#3056D3" stroke="#3056D3"></path>
+                    </svg>
+                  </span>
+                  <span class="w-full">
+                    <span class="text-base sm:text-lg font-semibold dark:text-white text-black">
+                      How long does it take to design a website?
+                    </span>
+                  </span>
+                </button>
+                <div class="faq-content pl-[62px] hidden">
+                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                    It depends on the kind of site. A simple landing page can take a few days, while a more complex
+                    e-commerce site can take several weeks.
+                  </p>
+                </div>
+              </div>
+              <div class="single-faq
+                    w-full
+                    dark:bg-gray-900
+                    bg-blue-500 
+                    rounded-lg
+                    p-5
+                    sm:p-8
+                    mb-8
+                    wow
+                    fadeInUp" data-wow-delay=".2s
+                  " style="visibility: visible; animation-delay: 0.2s;">
+                <button class="faq-btn flex items-center w-full text-left">
+                  <span class="
+                        w-full
+                        max-w-[40px]
+                        h-10
+                        flex
+                        items-center
+                        justify-center
+                        rounded-lg
+                        bg-primary
+                        text-primary
+                        bg-opacity-5
+                        mr-5
+                      ">
+                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                      <path
+                        d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                        fill="#3056D3" stroke="#3056D3"></path>
+                    </svg>
+                  </span>
+                  <span class="w-full">
+                    <span class="text-base sm:text-lg font-semibold dark:text-white text-black">
+                      Are your websites mobile-friendly and responsive?
+                    </span>
+                  </span>
+                </button>
+                <div class="faq-content pl-[62px] hidden">
+                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                    Yes, a main focus of mine is ensuring that all websites I design are mobile-friendly and responsive.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4">
+              <div class="single-faq
+                    w-full
+                    dark:bg-gray-900
+                    bg-blue-500 
+                    rounded-lg
+                    p-5
+                    sm:p-8
+                    mb-8
+                    wow
+                    fadeInUp" data-wow-delay=".1s
+                  " style="visibility: visible; animation-delay: 0.1s;">
+                <button class="faq-btn flex items-center w-full text-left">
+                  <span class="
+                        w-full
+                        max-w-[40px]
+                        h-10
+                        flex
+                        items-center
+                        justify-center
+                        rounded-lg
+                        bg-primary
+                        text-primary
+                        bg-opacity-5
+                        mr-5
+                      ">
+                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                      <path
+                        d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                        fill="#3056D3" stroke="#3056D3"></path>
+                    </svg>
+                  </span>
+                  <span class="w-full">
+                    <span class="text-base sm:text-lg font-semibold dark:text-white text-black">
+                      What platforms or tool do you use?
+                    </span>
+                  </span>
+                </button>
+                <div class="faq-content pl-[62px] hidden">
+                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                    I primarily use HTML, CSS, JavaScript,Vue.js PHP, Figma and WordPress.
+                  </p>
+                </div>
+              </div>
+              <div class="single-faq
+                    w-full
+                    dark:bg-gray-900
+                    bg-blue-500 
+                    rounded-lg
+                    p-5
+                    sm:p-8
+                    mb-8
+                    wow
+                    fadeInUp" data-wow-delay=".15s
+                  " style="visibility: visible; animation-delay: 0.15s;">
+                <button class="faq-btn flex items-center w-full text-left">
+                  <span class="
+                        w-full
+                        max-w-[40px]
+                        h-10
+                        flex
+                        items-center
+                        justify-center
+                        rounded-lg
+                        bg-primary
+                        text-primary
+                        bg-opacity-5
+                        mr-5
+                      ">
+                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                      <path
+                        d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                        fill="#3056D3" stroke="#3056D3"></path>
+                    </svg>
+                  </span>
+                  <span class="w-full">
+                    <span class="text-base sm:text-lg font-semibold dark:text-white text-black">
+                      Can you help with maintenance/updates after launch?
+                    </span>
+                  </span>
+                </button>
+                <div class="faq-content pl-[62px] hidden">
+                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                    Absolutely, I offer ongoing maintenance services to ensure that websites stay up-to-date and secure.
+                  </p>
+                </div>
+              </div>
+              <div class="single-faq
+                    w-full
+                    dark:bg-gray-900
+                    bg-blue-500 
+                    rounded-lg
+                    p-5
+                    sm:p-8
+                    mb-8
+                    wow
+                    fadeInUp" data-wow-delay=".2s
+                  " style="visibility: visible; animation-delay: 0.2s;">
+                <button class="faq-btn flex items-center w-full text-left">
+                  <span class="
+                        w-full
+                        max-w-[40px]
+                        h-10
+                        flex
+                        items-center
+                        justify-center
+                        rounded-lg
+                        bg-primary
+                        text-primary
+                        bg-opacity-5
+                        mr-5
+                      ">
+                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                      <path
+                        d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                        fill="#3056D3" stroke="#3056D3"></path>
+                    </svg>
+                  </span>
+                  <span class="w-full">
+                    <span class="text-base sm:text-lg font-semibold dark:text-white text-black">
+                      How often should a website be updated?
+                    </span>
+                  </span>
+                </button>
+                <div class="faq-content pl-[62px] hidden">
+                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                    It's recommended to have periodic updates to keep the site fresh and relevant. The frequency of
+                    updates can vary depending on the specific needs and goals of the website.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    </main>
+
+    <footer class="bg-blue-500 dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="index.html" class="flex items-center">
+              <img src="public/ja-web-design.png" class="h-16 mr-3" alt="J.A Web Design Logo">
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-8 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
+              <ul class="text-black dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="mailto:hello@jeffreyawebdev.com" class="hover:underline">hello@jeffreyawebdev.com</a>
+                </li>
+                <li class="mb-4">
+                  <a href="tel:+17809837309" class="hover:underline">780-983-7309</a>
+                </li>
+                <li>
+                  Edmonton, Alberta
+                </li>
+              </ul>
+            </div>
+            <div class="text-right">
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">On the Web</h2>
+              <ul class="text-black dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://github.com/jeffrey-agyepong" class="hover:underline" target="_blank">Github</a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/j.a.webdesign" class="hover:underline" target="_blank">Instagram</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-black sm:text-center dark:text-gray-400"> <a href="sitemap.html"
+              class="hover:underline">Sitemap</a>
+          </span>
+          <span class="text-sm text-black sm:text-center dark:text-gray-400">© 2023 J.A Web Design. All Rights Reserved
+          </span>
+
+
+          <div>
+            <ul class="text-black dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="node_modules/flowbite/dist/flowbite.min.js" type="module"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

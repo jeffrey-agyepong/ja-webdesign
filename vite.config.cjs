@@ -12,6 +12,9 @@ module.exports = {
         }
     },
     plugins: [
-        Sitemap()
+        Sitemap({
+            base: 'https://jawebdesign.ca/', // your actual site URL
+            exclude: ['/404'] // optional, exclude URLs that you don't want to include in the sitemap
+        })
     ]
 };

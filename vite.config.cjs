@@ -8,7 +8,7 @@ module.exports = {
                 about: 'about.html',
                 contact: 'contact.html',
                 privacyPolicy: 'privacy-policy.html',
-                siteMap: 'sitemap.xml'
+
             }
         }
     }

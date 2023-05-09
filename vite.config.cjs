@@ -8,6 +8,7 @@ module.exports = {
                 about: 'about.html',
                 contact: 'contact.html',
                 privacyPolicy: 'privacy-policy.html',
+
             }
         }
     },
@@ -16,5 +17,8 @@ module.exports = {
             base: 'https://jawebdesign.ca/', // your actual site URL
             exclude: ['/404'] // optional, exclude URLs that you don't want to include in the sitemap
         })
-    ]
+    ],
+    optimizeDeps: {
+        include: ['vite-plugin-sitemap']
+    }
 };

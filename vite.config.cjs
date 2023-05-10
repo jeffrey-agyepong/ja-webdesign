@@ -1,4 +1,4 @@
-const Sitemap = require('vite-plugin-sitemap');
+// vite.config.js
 
 module.exports = {
     build: {
@@ -11,14 +11,5 @@ module.exports = {
 
             }
         }
-    },
-    plugins: [
-        Sitemap({
-            base: 'https://jawebdesign.ca/index.html', // your actual site URL
-            exclude: ['/404'] // optional, exclude URLs that you don't want to include in the sitemap
-        })
-    ],
-    optimizeDeps: {
-        include: ['vite-plugin-sitemap']
     }
 };

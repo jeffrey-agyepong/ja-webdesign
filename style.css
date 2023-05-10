@@ -29,6 +29,10 @@ main {
     transition-duration: 400ms !important;
 }
 
+.social-dark svg:hover {
+    fill: rgb(5, 5, 5);
+}
+
 @media screen and (min-width: 768px) {
     .about .container {
         padding: 0 70px;

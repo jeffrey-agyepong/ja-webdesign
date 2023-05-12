@@ -29,6 +29,15 @@ main {
     transition-duration: 400ms !important;
 }
 
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 .social-dark svg:hover {
     fill: rgb(5, 5, 5);
 }

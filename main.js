@@ -3,6 +3,21 @@ import Swup from 'swup';
 const swup = new Swup({
 });
 
+// Get all anchor tags in the dropdown menu
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownLinks = document.querySelectorAll('#navbar-sticky a');
+
+    // Add a click event listener to each anchor tag
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Get the dropdown menu button
+            const dropdownButton = document.querySelector('#dropdown-button');
+
+            // Trigger the dropdown menu to close
+            dropdownButton.click();
+        });
+    });
+});
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
@@ -52,3 +67,4 @@ faqs.forEach((el) => {
         el.querySelector(".faq-content").classList.toggle("hidden");
     });
 });
+

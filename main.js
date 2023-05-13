@@ -1,7 +1,3 @@
-import Swup from 'swup';
-
-const swup = new Swup({
-});
 
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');

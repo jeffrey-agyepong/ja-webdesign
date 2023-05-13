@@ -6,7 +6,7 @@ class HomeMyHeader extends HTMLElement {
     <nav class="bg-blue-500 dark:bg-gray-900 dark:shadow-white fixed w-full z-20 top-0 left-0">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="/index.html" class="flex items-center">
-          <img src="/public/ja-web-design.png" class="h-16 mr-3" alt="J.A Web Design Logo">
+          <img src="public/ja-web-design.png" class="h-16 mr-3" alt="J.A Web Design Logo">
         </a>
         <div class="flex md:order-2">
           <!-- Get Started  -->

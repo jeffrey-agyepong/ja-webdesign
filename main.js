@@ -1,6 +1,12 @@
 import Swup from 'swup';
 import SwupScrollPlugin from '@swup/scroll-plugin';
 
+
+function closeMobileNav() {
+    var nav = document.getElementById("mobile-nav");
+    nav.classList.toggle("hidden");
+}
+
 const options = {
     animationSelector: '[class*="transition-fade"]',
     animateHistoryBrowsing: true,

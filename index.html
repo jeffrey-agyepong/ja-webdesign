@@ -47,7 +47,6 @@
 
     gtag('config', 'G-WVW8BBBVLV');
   </script>
-
 </head>
 
 <body>
@@ -690,7 +689,8 @@
             </div>
           </div>
 
-          <div class=" flex flex-wrap container mx-auto lg:max-w-screen-2xl lg:px-12">
+          <div class=" flex flex-wrap container mx-auto lg:max-w-screen-2xl lg:px-12" id="accordion-collapse"
+            data-accordion="collapse">
             <div class="w-full lg:w-1/2 px-4">
               <div class="single-faq
                     w-full
@@ -703,7 +703,9 @@
                     wow
                     fadeInUp" data-wow-delay=".1s
                   " style="visibility: visible; animation-delay: 0.1s;">
-                <button class="faq-btn flex items-center w-full text-left">
+                <button class="faq-btn flex items-center w-full text-left"
+                  data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
+                  aria-controls="accordion-collapse-body-1">
                   <span class="
                         w-full
                         max-w-[40px]
@@ -723,14 +725,15 @@
                         fill="#3056D3" stroke="#3056D3"></path>
                     </svg>
                   </span>
-                  <span class="w-full">
-                    <span class="text-base sm:text-lg font-medium dark:text-white text-black">
+                  <span class="w-full" id="accordion-collapse-heading-1">
+                    <span class="text-lg sm:text-lg font-medium dark:text-white text-black">
                       How do you approach designing a website?
                     </span>
                   </span>
                 </button>
-                <div class="faq-content pl-[62px] hidden">
-                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                <div class="faq-content pl-[62px] hidden" id="accordion-collapse-body-1"
+                  aria-labelledby="accordion-collapse-heading-1">
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
                     When approaching website design, I begin with thorough research and planning, followed by gathering
                     inspiration from design sources. Next, I create a wireframe to establish the site's structure, and
                     then focus on user experience (UX) design and intuitive navigation. Once the wireframe is finalized,
@@ -752,7 +755,9 @@
                     wow
                     fadeInUp" data-wow-delay=".15s
                   " style="visibility: visible; animation-delay: 0.15s;">
-                <button class="faq-btn flex items-center w-full text-left">
+                <button class="faq-btn flex items-center w-full text-left"
+                  data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                  aria-controls="accordion-collapse-body-2">
                   <span class="
                         w-full
                         max-w-[40px]
@@ -772,14 +777,15 @@
                         fill="#3056D3" stroke="#3056D3"></path>
                     </svg>
                   </span>
-                  <span class="w-full">
-                    <span class="text-base sm:text-lg font-medium dark:text-white text-black">
+                  <span class="w-full" id="accordion-collapse-heading-2">
+                    <span class="text-lg sm:text-lg font-medium dark:text-white text-black">
                       How long does it take to design a website?
                     </span>
                   </span>
                 </button>
-                <div class="faq-content pl-[62px] hidden">
-                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                <div class="faq-content pl-[62px] hidden" id="accordion-collapse-body-2"
+                  aria-labelledby="accordion-collapse-heading-2">
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
                     The time required to design a website varies depending on the type and complexity of the site. A
                     simple landing page can typically be designed within a few days, while a more intricate e-commerce
                     site may take several weeks to complete. The duration of the design process is influenced by factors
@@ -799,7 +805,9 @@
                     wow
                     fadeInUp" data-wow-delay=".2s
                   " style="visibility: visible; animation-delay: 0.2s;">
-                <button class="faq-btn flex items-center w-full text-left">
+                <button class="faq-btn flex items-center w-full text-left"
+                  data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3">
                   <span class="
                         w-full
                         max-w-[40px]
@@ -819,14 +827,15 @@
                         fill="#3056D3" stroke="#3056D3"></path>
                     </svg>
                   </span>
-                  <span class="w-full">
-                    <span class="text-base sm:text-lg font-medium dark:text-white text-black">
+                  <span class="w-full" id="accordion-collapse-heading-3">
+                    <span class="text-lg sm:text-lg font-medium dark:text-white text-black">
                       Are your websites mobile-friendly and responsive?
                     </span>
                   </span>
                 </button>
-                <div class="faq-content pl-[62px] hidden">
-                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                <div class="faq-content pl-[62px] hidden" id="accordion-collapse-body-3"
+                  aria-labelledby="accordion-collapse-heading-3">
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
                     Absolutely! Ensuring that websites I design are mobile-friendly and responsive is a top priority for
                     me. I understand the importance of providing an optimal user experience across various devices,
                     screen sizes, and orientations. By implementing responsive design techniques and leveraging
@@ -848,7 +857,9 @@
                     wow
                     fadeInUp" data-wow-delay=".1s
                   " style="visibility: visible; animation-delay: 0.1s;">
-                <button class="faq-btn flex items-center w-full text-left">
+                <button class="faq-btn flex items-center w-full text-left"
+                  data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                  aria-controls="accordion-collapse-body-4">
                   <span class="
                         w-full
                         max-w-[40px]
@@ -868,22 +879,29 @@
                         fill="#3056D3" stroke="#3056D3"></path>
                     </svg>
                   </span>
-                  <span class="w-full">
-                    <span class="text-base sm:text-lg font-medium dark:text-white text-black">
+                  <span class="w-full" id="accordion-collapse-heading-4">
+                    <span class="text-lg sm:text-lg font-medium dark:text-white text-black">
                       What platforms or tool do you use?
                     </span>
                   </span>
                 </button>
-                <div class="faq-content pl-[62px] hidden">
-                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                <div class="faq-content pl-[62px] hidden" id="accordion-collapse-body-4"
+                  aria-labelledby="accordion-collapse-heading-4">
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
                     I primarily utilize a range of platforms and tools to design and develop websites. These include
                     HTML, CSS, JavaScript, Vue.js, Vite, PHP, Figma, Netlify, Cloudflare, and WordPress. HTML and CSS
                     serve as the foundation for structuring and styling web pages, while JavaScript adds interactivity
-                    and dynamic features. Vue.js is a popular JavaScript framework that facilitates efficient building
+                    and dynamic features.
+                  </p>
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
+                    Vue.js is a popular JavaScript framework that facilitates efficient building
                     of interactive user interfaces. Vite is a build tool that enhances the development process. PHP is a
                     server-side scripting language used for dynamic website functionality. Figma is a versatile design
                     tool that aids in creating visual mockups and prototypes. Netlify is used for deployment and
-                    hosting, while Cloudflare provides performance optimization and security features. Lastly, WordPress
+                    hosting, while Cloudflare provides performance optimization and security features.
+                  </p>
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
+                    Lastly, WordPress
                     is a widely-used content management system (CMS) that allows for the creation and management of
                     various types of websites. By leveraging these platforms and tools, I ensure that the websites I
                     design are robust, visually appealing, and tailored to meet your specific needs.
@@ -902,7 +920,9 @@
                     wow
                     fadeInUp" data-wow-delay=".2s
                   " style="visibility: visible; animation-delay: 0.2s;">
-                <button class="faq-btn flex items-center w-full text-left">
+                <button class="faq-btn flex items-center w-full text-left"
+                  data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                  aria-controls="accordion-collapse-body-5">
                   <span class="
                         w-full
                         max-w-[40px]
@@ -922,14 +942,15 @@
                         fill="#3056D3" stroke="#3056D3"></path>
                     </svg>
                   </span>
-                  <span class="w-full">
-                    <span class="text-base sm:text-lg font-medium dark:text-white text-black">
+                  <span class="w-full" id="accordion-collapse-heading-5">
+                    <span class="text-lg sm:text-lg font-medium dark:text-white text-black">
                       How often should a website be updated?
                     </span>
                   </span>
                 </button>
-                <div class="faq-content pl-[62px] hidden">
-                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                <div class="faq-content pl-[62px] hidden" id="accordion-collapse-body-5"
+                  aria-labelledby="accordion-collapse-heading-5">
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
                     To keep a website fresh and relevant, it is recommended to have periodic updates. The frequency of
                     updates can vary depending on the specific needs and goals of the website. Factors such as the
                     industry, target audience, content type, and technological advancements play a role in determining
@@ -951,34 +972,26 @@
               wow
               fadeInUp" data-wow-delay=".15s
             " style="visibility: visible; animation-delay: 0.15s;">
-                <button class="faq-btn flex items-center w-full text-left">
-                  <span class="
-                  w-full
-                  max-w-[40px]
-                  h-10
-                  flex
-                  items-center
-                  justify-center
-                  rounded-lg
-                  bg-primary
-                  text-primary
-                  bg-opacity-5
-                  mr-5
-                ">
-                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
+                <button class="faq-btn flex items-center w-full text-left"
+                  data-accordion-target="#accordion-collapse-body-6" aria-expanded="false"
+                  aria-controls="accordion-collapse-body-6">
+                  <span class=" w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary
+                  text-primary bg-opacity-5 mr-5 ">
+                    <svg width=" 17" height="10" viewBox="0 0 17 10" class="fill-current icon">
                       <path
                         d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
                         fill="#3056D3" stroke="#3056D3"></path>
                     </svg>
                   </span>
-                  <span class="w-full">
-                    <span class="text-base sm:text-lg font-medium dark:text-white text-black">
+                  <span class="w-full" id="accordion-collapse-heading-6">
+                    <span class=" text-lg sm:text-lg font-medium dark:text-white text-black">
                       Can you help with maintenance/updates after launch?
                     </span>
                   </span>
                 </button>
-                <div class="faq-content pl-[62px] hidden">
-                  <p class="text-base text-black dark:text-white leading-relaxed py-3">
+                <div class="faq-content pl-[62px] hidden" id="accordion-collapse-body-6"
+                  aria-labelledby="accordion-collapse-heading-6">
+                  <p class="text-lg text-black dark:text-white leading-relaxed py-3">
                     Absolutely! I provide comprehensive ongoing maintenance services to ensure that websites remain
                     up-to-date, secure, and optimized. After the website is launched, I offer support and assistance
                     with regular updates, such as content updates, software updates, security patches, and bug fixes. I
@@ -991,6 +1004,11 @@
               </div>
             </div>
           </div>
+
+
+
+
+
         </div>
       </section>
 
@@ -1061,6 +1079,7 @@
   <script src="/node_modules/swup/dist/Swup.module.js" type="module"></script>
   <script src="/node_modules/flowbite/dist/flowbite.min.js" type="module"></script>
   <script src="/main.js" type="module"></script>
+
 </body>
 
 </html>

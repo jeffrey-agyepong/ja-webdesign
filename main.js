@@ -8,30 +8,30 @@ function closeMobileNav() {
     nav.classList.toggle("hidden");
 }
 
-const options = {
-    animationSelector: '[class*="transition-fade"]',
-    animateHistoryBrowsing: true,
-    plugins: [
+// const options = {
+//     animationSelector: '[class*="transition-fade"]',
+//     animateHistoryBrowsing: true,
+//     plugins: [
 
-        new SwupScrollPlugin({
-            animateScroll: false
-        })
-    ]
-};
-const swup = new Swup(options);
+//         new SwupScrollPlugin({
+//             animateScroll: false
+//         })
+//     ]
+// };
 // const swup = new Swup(options);
+// // const swup = new Swup(options);
 
-let scrollValues = {};
+// let scrollValues = {};
 
-swup.on('clickLink', () => {
-    scrollValues[window.location.href] = window.scrollY;
-});
+// swup.on('clickLink', () => {
+//     scrollValues[window.location.href] = window.scrollY;
+// });
 
-swup.on('popState', () => {
-    setTimeout(function () {
-        window.scrollTo(0, scrollValues[window.location.href]);
-    }, 100);
-});
+// swup.on('popState', () => {
+//     setTimeout(function () {
+//         window.scrollTo(0, scrollValues[window.location.href]);
+//     }, 100);
+// });
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 

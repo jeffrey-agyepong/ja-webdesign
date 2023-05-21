@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['index.html', 'about.html', 'contact.html', 'privacy-policy.html', './src/**/*.{js,jsx,ts,tsx,vue,html}', './node_modules/flowbite/**/*.js'],
+  content: ['index.html', 'about.html', 'contact.html', 'privacy-policy.html', 'pricing.html', './src/**/*.{js,jsx,ts,tsx,vue,html}', './node_modules/flowbite/**/*.js'],
   theme: {
     colors: {
       'header-dark-blue': '#080f63',

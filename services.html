@@ -139,14 +139,13 @@
 
         </header>
         <main id="swup" class="transition-fade">
-
             <section
                 class="bg-blue-300 dark:bg-blue-800 mt-16 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] min-h-fit dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
 
                     <h2
                         class="max-w-24ch mb-4 mt-40 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-left capitalize">
-                        Projects
+                        Services
                     </h2>
 
                 </div>
@@ -154,87 +153,230 @@
                     class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
                 </div>
             </section>
-
-
-
-
-            <!-- Projects -->
-            <section class="dark:bg-blue-800 bg-blue-300  projects">
+            <!-- Services -->
+            <section class="dark:bg-blue-900 bg-blue-400" id="services">
                 <div class="container py-16 md:py-20 lg:px-8 px-4 mx-auto">
-                    <h2
-                        class="text-center font-header text-3xl font-bold uppercase dark:text-white text-blue-800 sm:text-5xl lg:text-6xl">
-                        Projects
-                    </h2>
                     <h3
                         class="pt-6 text-black dark:text-white text-center font-header text-xl font-medium sm:text-2xl lg:text-3xl">
-                        These are some of the projects I've worked on.
+                        These are the services I offer
                     </h3>
+
                     <div
-                        class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 pb-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-                        <a href="https://www.figma.com/proto/tWbUYddiploWtP4uEgCtlj/Pop's-Pizza-%26-Pasta---Redesign?page-id=0%3A1&type=design&node-id=0-1&viewport=404%2C189%2C0.17&scaling=min-zoom&starting-point-node-id=4%3A487"
-                            target="_blank"
-                            class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
-                            <img src="/public/pops-pizza-pasta.webp" class="w-full shadow rounded-t-xl"
-                                alt="Pop's Pizza & Pasta" width="716" height="400">
-                            <div class="text-center  px-4 py-6">
-                                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
-                                    Pop's Pizza & Pasta (Unofficial Redesign)
-                                </p>
-                                <span class="font-general-medium text-lg text-black dark:text-white">
+                        class="flex overflow-x-auto sm:grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3 ">
+                        <!-- dark:hover:bg-dark-blue -->
+                        <div class="group rounded px-8 py-12 shadow bg-blue-700 dark:bg-header-dark-blue">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/public/icon-development-white.svg" alt=" web development icon">
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/public/icon-development-black.svg" alt="web development icon">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                                    Web Development
+                                </h3>
+                                <p class="dark:text-white text-black mt-4 text-left">Lorem ipsum dolor sit, amet
+                                    consectetur
+                                    adipisicing elit.
+                                    Ipsum ratione, minima
+                                    placeat eos quas, consequuntur inventore nihil, officiis incidunt obcaecati
+                                    possimus. Saepe vitae, incidunt vero numquam eos quas nostrum velit!</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/public/icon-graphics-white.svg" alt="Web Design icon">
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/public/icon-graphics-black.svg" alt="Graphic Design icon">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
                                     Web Design
-                                </span>
+                                </h3>
+                                <p class="dark:text-white text-black mt-4 text-left">Lorem ipsum dolor sit, amet
+                                    consectetur
+                                    adipisicing elit.
+                                    Ipsum ratione, minima
+                                    placeat eos quas, consequuntur inventore nihil, officiis incidunt obcaecati
+                                    possimus. Saepe vitae, incidunt vero numquam eos quas nostrum velit!</p>
                             </div>
-                        </a>
-                        <a href="https://jtbcreatives.netlify.app/index.html" target="_blank"
-                            class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
-                            <img src="/public/jtb.webp" class="w-full shadow rounded-t-xl"
-                                alt="JTB Creatives - A NAIT DMIT Mock Site" width="716" height="400">
-                            <div class="text-center px-4 py-6">
-                                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
-                                    JTB Creatives - NAIT DMIT (Concept)
-                                </p>
-                                <span class="font-general-medium text-lg text-black dark:text-white">
-                                    Web Design & Development
-                                </span>
-                            </div>
-
-
-                        </a>
-                        <a href="https://i.ibb.co/t2H7pxN/iha.webp" target="_blank"
-                            class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
-                            <img src="/public/internation-hockey-academy.webp" class="w-full shadow rounded-t-xl"
-                                alt="International Hockey Academy">
-                            <div class="text-center px-4 py-6">
-                                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
-                                    International Hockey Academy
-                                </p>
-                                <span class="font-general-medium text-lg text-black dark:text-white">
-                                    WordPress Development
-                                </span>
+                        </div>
+                        <div
+                            class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/public/seo-white.svg" alt="seo">
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/public/seo.svg" alt="seo">
+                                </div>
                             </div>
 
-
-                        </a>
-                        <a href="index.html"
-                            class="mx-auto transform transition-all hover:scale-105 md:mx-0 bg-blue-700 dark:bg-ternary-dark rounded-xl project-card hover:drop-shadow-3xl">
-                            <img src="/public/ja-web-design.webp" class="w-full shadow rounded-t-xl"
-                                alt="J.A Web Design">
-                            <div class="text-center text-white px-4 py-6">
-                                <p class="font-general-semibold text-xl text-black dark:text-white font-semibold mb-2">
-                                    J.A Web Design
-                                </p>
-                                <span class="font-general-medium text-lg text-black dark:text-white">
-                                    Web Design & Development
-                                </span>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                                    Seo
+                                </h3>
+                                <p class="dark:text-white text-black mt-4 text-left">Lorem ipsum dolor sit, amet
+                                    consectetur
+                                    adipisicing elit.
+                                    Ipsum ratione, minima
+                                    placeat eos quas, consequuntur inventore nihil, officiis incidunt obcaecati
+                                    possimus. Saepe vitae, incidunt vero numquam eos quas nostrum velit!</p>
                             </div>
-                        </a>
+                        </div>
+                        <div
+                            class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/public/icon-mobile-white.svg" alt="Social Media Marketing icon">
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/public/icon-mobile-black.svg" alt="Social Media Marketing icon">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                                    Social Media Marketing
+                                </h3>
+                                <p class="dark:text-white text-black mt-4 text-left">Lorem ipsum dolor sit, amet
+                                    consectetur
+                                    adipisicing elit.
+                                    Ipsum ratione, minima
+                                    placeat eos quas, consequuntur inventore nihil, officiis incidunt obcaecati
+                                    possimus. Saepe vitae, incidunt vero numquam eos quas nostrum velit!</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/public/graphic-design-white.svg" alt="Graphic Design icon">
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/public/graphic-design-black.svg" alt="Graphic Design icon">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                                    Graphic Design
+                                </h3>
+                                <p class="dark:text-white text-black mt-4 text-left">Lorem ipsum dolor sit, amet
+                                    consectetur
+                                    adipisicing elit.
+                                    Ipsum ratione, minima
+                                    placeat eos quas, consequuntur inventore nihil, officiis incidunt obcaecati
+                                    possimus. Saepe vitae, incidunt vero numquam eos quas nostrum velit!</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group rounded px-8 py-12 shadow hover:bg-primary bg-blue-700 dark:bg-header-dark-blue">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/public/web-maintenance-white.svg" alt="Website Maintenance icon">
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/public/web-maintenance-black.svg" alt="Website Maintenance icon">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-white group-hover:text-yellow lg:text-xl">
+                                    Website Maintenance
+                                </h3>
+                                <p class="dark:text-white text-black mt-4 text-left">Lorem ipsum dolor sit, amet
+                                    consectetur
+                                    adipisicing elit.
+                                    Ipsum ratione, minima
+                                    placeat eos quas, consequuntur inventore nihil, officiis incidunt obcaecati
+                                    possimus. Saepe vitae, incidunt vero numquam eos quas nostrum velit!</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
 
+
+
+
+
+
         </main>
-        <my-footer></my-footer>
+        <footer class="bg-blue-500 dark:bg-gray-900">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="public/ja-web-design.png" class="h-16 mr-3" alt="J.A Web Design">
+                        </a>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-8 sm:gap-6 med:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
+                            <ul class="text-black dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="mailto:hello@jawebdesign.ca"
+                                        class="hover:underline">hello@jawebdesign.ca</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+17809837309" class="hover:underline">780-983-7309</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">On the Web
+                            </h2>
+                            <ul class="text-black dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="https://github.com/jeffrey-agyepong" class="hover:underline"
+                                        target="_blank">Github</a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/j.a.webdesign" class="hover:underline"
+                                        target="_blank">Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+                <div class="grid sm:flex sm:items-center sm:justify-between gap-4">
+                    <span class="text-sm text-black sm:text-center dark:text-gray-400"> <a
+                            href="https://jawebdesign.ca/sitemap.xml" class="hover:underline">Sitemap</a>
+                    </span>
+                    <span class="text-sm text-black sm:text-center dark:text-gray-400">© 2023 J.A Web Design. All Rights
+                        Reserved
+                    </span>
+
+
+                    <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                        <div>
+
+                            <ul class="text-sm text-black sm:text-center dark:text-gray-400">
+                                <li class="mb-4">
+                                    <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="node_modules/swup/dist/Swup.module.js" type="module"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js" type="module"></script>

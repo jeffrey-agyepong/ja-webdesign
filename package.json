@@ -17,6 +17,7 @@
   "dependencies": {
     "@swup/scroll-plugin": "^2.0.2",
     "flowbite": "^1.6.5",
+    "loadjs": "^4.3.0-rc1",
     "swup": "^3.0.6"
   }
 }

@@ -9,6 +9,7 @@ module.exports = {
                 contact: 'contact.html',
                 pricing: 'pricing.html',
                 services: 'services.html',
+                referral: 'referral.html',
                 projects: 'all-projects.html',
                 privacyPolicy: 'privacy-policy.html',
 

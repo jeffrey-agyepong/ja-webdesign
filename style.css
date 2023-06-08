@@ -66,6 +66,7 @@ html.is-animating .transition-fade {
     height: 200px;
 }
 
+
 @media screen and (min-width: 768px) {
     .about .container {
         padding: 0 70px;

@@ -62,8 +62,8 @@ html.is-animating .transition-fade {
 
 .mn-widget-member-logo {
     border-radius: 20px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 @media screen and (min-width: 768px) {

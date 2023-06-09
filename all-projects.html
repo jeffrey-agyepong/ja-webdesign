@@ -26,6 +26,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
     <title>Projects | J.A Web Design</title>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -61,7 +65,7 @@
                     </a>
                     <div class="flex md:order-2">
                         <!-- Get Started  -->
-                        <a href="contact.html" class="
+                        <!-- <a href="contact.html" class="
                  items-center
                  justify-center
                  py-3
@@ -74,7 +78,26 @@
                  hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg
                  transition
                  duration-300
-                   ease-in-out hidden sm:block">Request A Quote</a>
+                   ease-in-out hidden sm:block">Request A Quote</a> -->
+
+
+                        <!-- Calendly link widget begin -->
+                        <a href="#" class="capitalize font-bold
+                        items-center
+                        justify-center
+                        py-3
+                        px-6
+                        rounded-full
+                        text-white bg-header-dark-blue
+                        dark:bg-blue-700            
+                        hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg
+                        transition
+                        duration-300
+                        ease-in-out"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jawebdesign'});return false;">Book
+                            free
+                            consultation</a>
+                        <!-- Calendly link widget end -->
 
                         <!-- Hamburger menu -->
                         <button id="dropdown-button" data-collapse-toggle="navbar-sticky" type="button"
